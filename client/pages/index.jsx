@@ -4,19 +4,20 @@ import * as React from 'react';
 import Image from "next/image";
 import { PostCard, PostWidget, Categories } from "../components";
 import { useQuery } from "@apollo/client";
-import {getPosts} from '../services'
+import {getPostsQuery} from '../services'
 
 
 const Home = () => {
-  const {loading,error,data}= useQuery(getPosts);
+  const {loading,error,data}= useQuery(getPostsQuery);
   if(loading){
     return<p>Loading</p>
   }
   if(error) {
+    console.log(error)
     return(<p>Error </p>)
   };
+
   const postList=data.postsConnection.edges;
-  console.log(postList)
   return (
     <div className="container mx-auto px-10 mb-8">
       <Head>

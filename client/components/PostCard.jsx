@@ -4,12 +4,12 @@ import Link from "next/link";
 import Image from "next/image";
 
 const PostCard = ({ post }) => {
-  console.log(post);
+  console.log(post)
   return (
     <div className="bg-white shadow-lg rounded-lg lg:p-8 pb-12 mb-8">
       <div className="relative overflow-hidden shadow-md pb-80 mb-6">
         <Image
-          src={post.fearuredImage?.url || process.env.IMAGE_HOLDER}
+          src={post.featuredImage?.url || process.env.IMAGE_HOLDER}
           alt={post.title}
           width={800}
           height={800}
