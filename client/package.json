@@ -12,6 +12,7 @@
     "graphql-request": "^5.1.0",
     "html-react-parser": "^3.0.8",
     "moment": "^2.29.4",
+    "mongoose": "^6.9.1",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",

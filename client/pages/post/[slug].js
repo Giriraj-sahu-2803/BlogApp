@@ -4,8 +4,7 @@ import { PostDetail, Categories, PostWidget, Author, Comments, CommentsForm } fr
 
 
 const PostDetails = ({post}) => {
-    console.log(`post`);
-    console.log(post)
+
     return (
         <div className="container mx-auto px-10 mb-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
@@ -27,8 +26,6 @@ const PostDetails = ({post}) => {
 
 export const getStaticProps=async({params})=>{
  const data= await getPostDetails(params.slug);
- console.log('server side data');
- console.log(data)
  return{
     props:{
      post:data
