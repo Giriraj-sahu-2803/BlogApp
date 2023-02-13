@@ -16,7 +16,7 @@ const Header = () => {
         <div className="md:float-left  inline-block">
           <Link href="/">
             <span className="cursor-pointer font-bold text-4xl text-white ">
-              GraphCMS
+              Glance
             </span>
           </Link>
         </div>
